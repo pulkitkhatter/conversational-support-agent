@@ -1,0 +1,12 @@
+{"id": 1, "customer": "cus_1001", "turns": ["I was charged twice this month."], "expect_tools": ["get_customer_profile", "get_subscription", "search_knowledge_base", "create_support_ticket"], "expect_source": "billing", "expect_ticket": false}
+{"id": 2, "customer": "cus_1001", "turns": ["I was charged twice this month.", "yes"], "expect_tools": ["create_support_ticket"], "expect_source": null, "expect_ticket": true}
+{"id": 3, "customer": "cus_1001", "turns": ["What is your refund policy?"], "expect_tools": ["search_knowledge_base"], "expect_source": "billing", "expect_ticket": false}
+{"id": 4, "customer": "cus_1001", "turns": ["How do I reset my password?"], "expect_tools": ["search_knowledge_base"], "expect_source": "account", "expect_ticket": false}
+{"id": 5, "customer": "cus_1001", "turns": ["How do I cancel my subscription?"], "expect_tools": ["search_knowledge_base"], "expect_source": "account", "expect_ticket": false}
+{"id": 6, "customer": "cus_1001", "turns": ["What are your support hours?"], "expect_tools": ["search_knowledge_base"], "expect_source": "support", "expect_ticket": false}
+{"id": 7, "customer": "cus_1001", "turns": ["How do I enable two-factor authentication?"], "expect_tools": ["search_knowledge_base"], "expect_source": "account", "expect_ticket": false}
+{"id": 8, "customer": "cus_1002", "turns": ["I want to talk to a human"], "expect_tools": ["escalate_to_human"], "expect_source": null, "expect_ticket": false}
+{"id": 9, "customer": "cus_1003", "turns": ["What plan am I on and when does it renew?"], "expect_tools": ["get_subscription"], "expect_source": null, "expect_ticket": false}
+{"id": 10, "customer": "cus_1002", "turns": ["I was charged twice"], "expect_tools": ["get_customer_profile", "get_subscription", "search_knowledge_base"], "expect_source": "billing", "expect_ticket": false}
+{"id": 11, "customer": "cus_1001", "turns": ["Where can I find my invoices?"], "expect_tools": ["search_knowledge_base"], "expect_source": "billing", "expect_ticket": false}
+{"id": 12, "customer": "cus_1001", "turns": ["How long do priority tickets take to get a response?"], "expect_tools": ["search_knowledge_base"], "expect_source": "support", "expect_ticket": false}

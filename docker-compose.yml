@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      MEMORY_DB_PATH: /data/memory.db
+    volumes:
+      - memory:/data
+volumes:
+  memory:
